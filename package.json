@@ -7,7 +7,8 @@
     "rollup-start": "cd packages/rollup-start && npm run build",
     "es6-plus": "cd packages/es6-plus && npm run build",
     "rollup-server:dev": "cd packages/rollup-server && npm run dev",
-    "rollup-server:build": "cd packages/rollup-server && npm run build"
+    "rollup-server:build": "cd packages/rollup-server && npm run build",
+    "rollup-node": "cd packages/rollup-node && npm run build"
   },
   "devDependencies": {
     "lerna": "^3.22.1"

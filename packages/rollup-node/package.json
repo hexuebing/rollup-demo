@@ -1,0 +1,18 @@
+{
+  "name": "rollup-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./build/build.js"
+  },
+  "devDependencies": {
+    "rollup": "^2.38.5",
+    "@rollup/plugin-babel": "5.2.3",
+    "@babel/core": "7.12.13",
+    "@babel/preset-env": "7.12.13"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
