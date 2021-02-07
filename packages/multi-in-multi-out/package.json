@@ -1,0 +1,22 @@
+{
+  "name": "multi-in-multi-out",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rollup -wc ./build/rollup.config.dev.js",
+    "build": "rollup -c ./build/rollup.config.prod.js"
+  },
+  "devDependencies": {
+    "rollup": "^2.38.5",
+    "@rollup/plugin-babel": "5.2.3",
+    "@babel/core": "7.12.13",
+		"@babel/preset-env": "7.12.13",
+    "rollup-plugin-serve": "1.1.0",
+    "rollup-plugin-uglify": "6.0.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+
+}
