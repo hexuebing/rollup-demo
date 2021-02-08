@@ -1,0 +1,26 @@
+{
+  "name": "rollup-node-hrm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./build/prod.js",
+    "dev": "node ./build/dev.js"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.13",
+    "@babel/preset-env": "7.12.13",
+    "@rollup/plugin-babel": "5.2.3",
+    "chalk": "^4.1.0",
+    "chokidar": "^3.5.1",
+    "koa": "^2.13.1",
+    "koa-compose": "^4.1.0",
+    "koa-static": "^5.0.0",
+    "rollup": "^2.38.5",
+    "rollup-plugin-serve": "1.1.0",
+    "rollup-plugin-uglify": "^6.0.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

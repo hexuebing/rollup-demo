@@ -29,3 +29,7 @@
 
 - 编译输入多个ES6+的js源文件 `src/index.js` 和 `src/lib/index.js`
 - 编译输出多个ES5的js文件 `dist/index.js` 和 `dist/lib.js`
+
+## rollup-node-hrm
+
+- 用Node.js编码监听文件，并且执行Node.js调用API进行热编译。
