@@ -34,6 +34,54 @@
 
 - 用Node.js编码监听文件，并且执行Node.js调用API进行热编译。
 
-## rollup-node-css
+## rollup-css
 
 - 编译 *.css 源文件
+
+```js
+// 
+...
+plugins: [
+  postcss({
+    extract: true,
+    minimize: isProductionEnv,
+  }),
+  babel(babelOptions),
+]
+...
+```
+
+## rollup-scss
+
+- 编译 scss 文件
+
+```js
+const processSass = function(context, payload) {
+  return new Promise(( resolve, reject ) => {
+    sass.render({
+      file: context
+    }, function(err, result) {
+      if( !err ) {
+        resolve(result);
+      } else {
+        reject(err)
+      }
+    });
+  })
+}
+
+// process
+plugins: [
+  postcss({
+    extract: true,
+    minimize: isProductionEnv,
+    extensions:['css', 'scss'],
+    process: processSass,
+  }),
+  babel(babelOptions),
+],
+```
+
+## rollup-less
+
+- 编译 less 文件
