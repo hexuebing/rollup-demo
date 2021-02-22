@@ -85,3 +85,7 @@ plugins: [
 ## rollup-less
 
 - 编译 less 文件
+
+## rollup-vue
+
+- 未完成
